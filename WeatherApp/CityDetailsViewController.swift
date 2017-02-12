@@ -9,6 +9,11 @@
 import UIKit
 
 class CityDetailsViewController: UIViewController {
+    @IBOutlet weak var cityName: UILabel!
+    @IBOutlet weak var temperature: UILabel!
+    @IBOutlet weak var windDegrees: UILabel!
+    @IBOutlet weak var windSpeed: UILabel!
+    @IBOutlet weak var currentDate: UILabel!
 
     var cityNameFromTableView = String()
     
