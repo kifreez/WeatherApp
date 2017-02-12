@@ -11,3 +11,15 @@ import Foundation
     private let weatherBaseURL = "http://api.openweathermap.org/data/2.5/weather"
     private let weatherAPIKey = "b3989046e5418f5ce592d16b1764dc70"
 
+    func getWeatherData(_ city: String, completion:@escaping (_ weather:Weather) -> Void, errorHandler:@escaping (_ error:Error) -> Void) {
+
+
+
+
+
+
+
+
+
+
+}

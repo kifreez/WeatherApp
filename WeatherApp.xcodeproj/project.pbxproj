@@ -15,6 +15,7 @@
 		1F48A1E61E50C07A000757E8 /* CitiesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48A1E51E50C07A000757E8 /* CitiesListTableViewController.swift */; };
 		1F48A1E81E50C136000757E8 /* CityDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48A1E71E50C136000757E8 /* CityDetailsViewController.swift */; };
 		1F48A1EA1E50C41E000757E8 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48A1E91E50C41E000757E8 /* Weather.swift */; };
+		1F48A1EE1E50CF93000757E8 /* CitiesCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48A1ED1E50CF93000757E8 /* CitiesCustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1F48A1E51E50C07A000757E8 /* CitiesListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesListTableViewController.swift; sourceTree = "<group>"; };
 		1F48A1E71E50C136000757E8 /* CityDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityDetailsViewController.swift; sourceTree = "<group>"; };
 		1F48A1E91E50C41E000757E8 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		1F48A1ED1E50CF93000757E8 /* CitiesCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesCustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +66,9 @@
 				1F48A1E51E50C07A000757E8 /* CitiesListTableViewController.swift */,
 				1F48A1E71E50C136000757E8 /* CityDetailsViewController.swift */,
 				1F48A1E31E50C050000757E8 /* GetWeather.swift */,
-				1F48A1D51E50ADF8000757E8 /* Main.storyboard */,
+				1F48A1ED1E50CF93000757E8 /* CitiesCustomCell.swift */,
 				1F48A1E91E50C41E000757E8 /* Weather.swift */,
+				1F48A1D51E50ADF8000757E8 /* Main.storyboard */,
 				1F48A1D81E50ADF8000757E8 /* Assets.xcassets */,
 				1F48A1DA1E50ADF8000757E8 /* LaunchScreen.storyboard */,
 				1F48A1DD1E50ADF8000757E8 /* Info.plist */,
@@ -149,6 +152,7 @@
 				1F48A1E81E50C136000757E8 /* CityDetailsViewController.swift in Sources */,
 				1F48A1E41E50C050000757E8 /* GetWeather.swift in Sources */,
 				1F48A1E61E50C07A000757E8 /* CitiesListTableViewController.swift in Sources */,
+				1F48A1EE1E50CF93000757E8 /* CitiesCustomCell.swift in Sources */,
 				1F48A1D21E50ADF8000757E8 /* AppDelegate.swift in Sources */,
 				1F48A1EA1E50C41E000757E8 /* Weather.swift in Sources */,
 			);

@@ -11,6 +11,7 @@ import UIKit
 class CitiesListTableViewController: UITableViewController {
 
     let citiesName = ["Kiev","Amsterdam","Lisbon","Paris"]
+    let citiesImage = [#imageLiteral(resourceName: "kiev"), #imageLiteral(resourceName: "amsterdam"), #imageLiteral(resourceName: "lisbon"), #imageLiteral(resourceName: "paris")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,9 +30,12 @@ class CitiesListTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell: CitiesCustomCell = (tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? CitiesCustomCell)!
 
-        cell.textLabel?.text = citiesName[indexPath.row]
+        cell.cityName.text = citiesName[indexPath.row]
+        cell.cityImage.image = citiesImage[indexPath.row]
+        cell.cityImage.layer.masksToBounds = true
+        cell.cityImage.layer.cornerRadius = 10
 
         return cell
     }
