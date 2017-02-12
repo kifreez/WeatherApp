@@ -18,15 +18,12 @@ class GetWeater {
         let url = URL(string: "\(weatherBaseURL)?APPID=\(weatherAPIKey)&q=\(city)")
 
         guard let unwrapURL = url else {
-            print("url == nil")
             return
         }
 
         let task = URLSession.shared.dataTask(with: unwrapURL) { (data, response, error) in
 
             if let errorCheck = error {
-
-                print("Error Check is validate: \(errorCheck)")
 
                 errorHandler(errorCheck)
 
@@ -48,13 +45,8 @@ class GetWeater {
                         completion(weather)
                     }
 
-                    print("JSON:\(json)")
-                    print("MAIN:\(main)")
-                    print("WIND:\(wind)")
-                    print("DATE:\(dt)")
-
                 } catch let error as NSError {
-                    print("Error:\(error)")
+                        errorHandler(error)
                 }
             }
         }

@@ -12,13 +12,13 @@ func checkImageByName(_ city: String) -> String {
 
     switch city {
     case "Kiev":
-        return "kiev"
+        return "kiev_panorama"
     case "Lisbon":
-        return "lisbon"
+        return "Lisboa"
     case "Amsterdam":
-        return "amsterdam"
+        return "Amster"
     case "Paris":
-        return "paris"
+        return "Eyfel tower"
     default:
         return ""
     }

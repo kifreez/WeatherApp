@@ -11,7 +11,7 @@ import UIKit
 class CitiesListTableViewController: UITableViewController {
 
     let citiesName = ["Kiev","Amsterdam","Lisbon","Paris"]
-    let citiesImage = [#imageLiteral(resourceName: "kiev"), #imageLiteral(resourceName: "amsterdam"), #imageLiteral(resourceName: "lisbon"), #imageLiteral(resourceName: "paris")]
+    let citiesImage = [#imageLiteral(resourceName: "kiev_panorama"), #imageLiteral(resourceName: "Amster"), #imageLiteral(resourceName: "Lisboa"), #imageLiteral(resourceName: "Eyfel tower")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
