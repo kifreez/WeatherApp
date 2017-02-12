@@ -36,12 +36,13 @@ class GetWeater {
 
                     let main = json["main"] as? [String:Any] ?? ["":""]
                     let wind = json["wind"] as? [String:Any] ?? ["":""]
+                    let dt = json["dt"] as? Double ?? 0
 
                     let temp = main["temp"] as? Double ?? 0
                     let windSpeed = wind["speed"] as? Double ?? 0
                     let windDegrees = wind["deg"] as? Double ?? 0
 
-                    let weather = Weather(temp: temp, windSpeed: windSpeed, windDegrees: windDegrees)
+                    let weather = Weather(temp: temp, windSpeed: windSpeed, windDegrees: windDegrees, date: dt)
 
                     DispatchQueue.main.async {
                         completion(weather)
@@ -50,6 +51,7 @@ class GetWeater {
                     print("JSON:\(json)")
                     print("MAIN:\(main)")
                     print("WIND:\(wind)")
+                    print("DATE:\(dt)")
 
                 } catch let error as NSError {
                     print("Error:\(error)")

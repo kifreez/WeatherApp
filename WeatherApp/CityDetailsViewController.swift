@@ -14,6 +14,7 @@ class CityDetailsViewController: UIViewController {
     @IBOutlet weak var windDegrees: UILabel!
     @IBOutlet weak var windSpeed: UILabel!
     @IBOutlet weak var currentDate: UILabel!
+    @IBOutlet weak var cityImage: UIImageView!
 
     var cityNameFromTableView = String()
     let weather = GetWeater()
@@ -22,6 +23,9 @@ class CityDetailsViewController: UIViewController {
         super.viewDidLoad()
 
         cityName.text = cityNameFromTableView
+
+        cityImage.image = UIImage(named: checkImageByName(cityNameFromTableView))
+
 
         weather.getWeatherData("\(cityNameFromTableView)", completion: { (weather) in
             print(weather)
@@ -36,10 +40,18 @@ class CityDetailsViewController: UIViewController {
         let intTempValue = Int(floor(weather.tempCelsius))
         let intwindSpeed = Int(floor(weather.windSpeed))
         let intwindDegrees = Int(floor(weather.windDegrees))
+        
+        let date = Date(timeIntervalSince1970: weather.date)
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd HH:mm"
 
-        temperature.text = "\(intTempValue)"
-        windSpeed.text = "\(intwindSpeed)"
-        windDegrees.text = "\(intwindDegrees)"
+        let formatedDate = formatter.string(from: date)
+
+
+        temperature.text = "\(intTempValue)\u{00B0}"
+        windSpeed.text = "Wind speed: \(intwindSpeed) m/s"
+        windDegrees.text = "Wind direction: \(intwindDegrees)\u{00B0}"
+        currentDate.text = "\(formatedDate)"
     }
 
 

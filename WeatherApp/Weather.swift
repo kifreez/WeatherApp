@@ -18,8 +18,8 @@ struct Weather {
             return temp - 273.15
         }
     }
-
     let windSpeed: Double
     let windDegrees: Double
+    let date: Double
 
 }
