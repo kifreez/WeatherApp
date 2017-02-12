@@ -8,18 +8,18 @@
 
 import Foundation
 
+
+
 struct Weather {
+    let temp: Double
 
-    struct Weather {
-        let temp: Double
-        var tempCelsius: Double {
-            get {
-                return temp - 273.15
-            }
+    var tempCelsius: Double {
+        get {
+            return temp - 273.15
         }
-
-        let windSpeed: Double
-        let windDegrees: Double
-
     }
+
+    let windSpeed: Double
+    let windDegrees: Double
+
 }
